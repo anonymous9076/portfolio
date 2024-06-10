@@ -1,0 +1,37 @@
+.proj-area{
+    height: fit-content;
+    min-height: 100dvh;
+    box-sizing: border-box;
+    width: 100%;
+    background-color:white;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proj-head{
+    font-size: clamp(3rem,4vw,4rem);
+    font-weight: 700;
+    margin: 1rem 0;
+    padding: 0;
+}
+.projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.proj-cards{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}

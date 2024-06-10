@@ -1,0 +1,24 @@
+.my_card{
+    height: 20rem !important;
+    width: 17rem ;
+    margin: 2rem .5rem;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255) !important;
+    transition: all 1s linear;
+}
+
+.proj-img{
+    height: 11rem !important;
+}
+.my_card:hover{
+    transform: translate(-3%,-3%);
+    box-shadow: 5px 5px 10px grey;
+}
+.my_card:is:hover,.my_card:not(:hover){
+    filter: blur(5px);
+}
+.card-title{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}

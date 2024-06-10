@@ -1,0 +1,168 @@
+.skill {
+    width: 100%;
+    height: 100dvh;
+    background: url(https://t4.ftcdn.net/jpg/04/88/27/17/240_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg);
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    box-shadow: inset 5px 5px 20px 10px white;
+    display: flex;
+}
+
+.skill-area2 {
+    width: 60%;
+    height: 100%;
+}
+.skill-area2>h1{
+    height: 16%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    color:  rgb(13, 30, 122);
+    font-weight: 900;
+    font-size: clamp(2rem,4vw,4rem);
+    letter-spacing: 2px;
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
+}
+.skill-cont{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ul-list>h4{
+    color:white;
+    -webkit-text-stroke: .5px rgb(0, 110, 236);
+
+}
+.ul-list>li{
+    color: rgb(13, 30, 122);
+   
+}
+.skill-area {
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.hub {
+
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    animation: spin 10s linear infinite;
+
+}
+
+.hub:hover {
+    animation-play-state: paused;
+}
+
+.hub::after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+
+}
+
+.propeller {
+    width: 180%;
+    max-width: 200%;
+    height: 10%;
+    position: absolute;
+    transform-origin: bottom;
+
+}
+
+.propeller:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.propeller:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.propeller:nth-child(3) {
+    transform: rotate(90deg);
+}
+
+.propeller:nth-child(4) {
+    transform: rotate(135deg);
+}
+
+.propeller:nth-child(5) {
+    transform: rotate(180deg);
+}
+
+.propeller:nth-child(6) {
+    transform: rotate(225deg);
+}
+
+.propeller:nth-child(7) {
+    transform: rotate(270deg);
+}
+
+.propeller:nth-child(8) {
+    transform: rotate(315deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.skill-img {
+
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    perspective: 900px;
+
+}
+
+.skill-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+    border-radius: 10%;
+    box-sizing: border-box;
+    mix-blend-mode: color-burn;
+    box-shadow: 3px 3px 5px grey;
+    transition: all 1s linear;
+}
+@media screen and (max-width:800px) {
+    .skill-area{
+        display: none;
+
+    }
+    .skill-area2{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 80%;
+    }
+    .skill {
+        height: fit-content;
+        min-height: 100dvh;
+    }
+    .skill-area2>h1{
+        height: 9rem;
+    }
+
+}

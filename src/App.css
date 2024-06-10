@@ -1,18 +1,4 @@
 
-.colorful{
-    color: transparent;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    font-size: 3rem;
-    font-weight: 700;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-family: 'Luckiest Guy',cursive;
-    background: -o-linear-gradient(65deg,#F8DE22,#F94C10,#C70039,#900C3F,#0B666A,#35A29F,#97FEED,#FF5F9E,#E90064,#B3005E,#060047);
-    background: linear-gradient(25deg,#F8DE22,#F94C10,#C70039,#900C3F,#0B666A,#35A29F,#97FEED,#FF5F9E,#E90064,#B3005E,#060047);
-    letter-spacing: 2px; 
-    background-clip: text;
-     -webkit-background-clip:text;
+html{
+    scroll-snap-type: y mandatory;
 }

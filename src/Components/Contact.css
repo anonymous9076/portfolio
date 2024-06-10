@@ -1,0 +1,81 @@
+.contact{
+    width: 100%;
+    height: 100dvh;
+    background:url(https://t4.ftcdn.net/jpg/04/88/27/17/240_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    box-sizing: border-box;
+    background-attachment: fixed;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    display: grid;
+    place-items:center ;
+    box-sizing: border-box;
+}
+.cont-container {
+    width: 50%;
+    background-color: #fff;
+    padding: 4%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 80%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .input-group input[type="text"],
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2970DB;
+    border-radius: 5px;
+  }
+
+  .input-group textarea {
+    height: 100px;
+  }
+
+  .input-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2970DB;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .input-group button:hover {
+    background-color: #2970DB;
+  }
+
+  .success-message {
+    color: #009933;
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media screen and (max-width:650px) {
+    .cont-container{
+        width: 80%;
+    }
+  }
